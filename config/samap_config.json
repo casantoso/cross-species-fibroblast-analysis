@@ -1,0 +1,69 @@
+{
+  "species": {
+    "hu": {
+      "name": "Human",
+      "slug": "human"
+    },
+    "mo": {
+      "name": "Mouse",
+      "slug": "mouse"
+    },
+    "pi": {
+      "name": "Pig",
+      "slug": "pig"
+    },
+    "ch": {
+      "name": "Chicken",
+      "slug": "chicken"
+    },
+    "ze": {
+      "name": "Zebrafish",
+      "slug": "zebrafish"
+    },
+    "ti": {
+      "name": "Tilapia",
+      "slug": "tilapia"
+    }
+  },
+  "broad_cell_types": [
+    "Fibroblasts",
+    "SMCs",
+    "Endothelial",
+    "Epithelial"
+  ],
+  "cell_caps": {
+    "hu": {
+      "Endothelial": 2000,
+      "Epithelial": 3000
+    },
+    "mo": {
+      "Fibroblasts": 2000
+    },
+    "pi": {
+      "Epithelial": 3000
+    },
+    "ch": {
+      "Fibroblasts": 2000,
+      "Endothelial": 2000
+    },
+    "ze": {},
+    "ti": {
+      "Fibroblasts": 2000
+    }
+  },
+  "paths": {
+    "celltype_h5ad_dir": "outputs/samap/inputs/celltype",
+    "fibroblast_h5ad_dir": "outputs/samap/inputs/fibroblast",
+    "maps_dir": "maps",
+    "celltype_results_dir": "outputs/samap/celltype",
+    "fibroblast_results_dir": "outputs/samap/fibroblast"
+  },
+  "parameters": {
+    "samap_pairwise": true,
+    "thread_limit": 8,
+    "expression_percentile": 0.99,
+    "global_leiden_resolution": 0.7,
+    "paralog_substitution_threshold": 0.3,
+    "random_seed": 123
+  }
+}

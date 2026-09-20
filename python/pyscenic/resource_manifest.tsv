@@ -1,0 +1,9 @@
+species	resource_type	resource_version	genome_build	annotation_release	filename	source_url
+mouse	TF list	Aerts cisTarget TF list	mm10	NA	allTFs_mm.txt	https://resources.aertslab.org/cistarget/tf_lists/allTFs_mm.txt
+mouse	cisTarget ranking database	mc_v10_clust	mm10	refseq_r80	mm10_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather	https://resources.aertslab.org/cistarget/databases/mus_musculus/mm10/refseq_r80/mc_v10_clust/gene_based/mm10_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather
+mouse	cisTarget ranking database	mc_v10_clust	mm10	refseq_r80	mm10_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather	https://resources.aertslab.org/cistarget/databases/mus_musculus/mm10/refseq_r80/mc_v10_clust/gene_based/mm10_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather
+mouse	motif annotation	v10nr_clust	mm10	NA	motifs-v10nr_clust-nr.mgi-m0.001-o0.0.tbl	https://resources.aertslab.org/cistarget/motif2tf/motifs-v10nr_clust-nr.mgi-m0.001-o0.0.tbl
+human	TF list	Aerts cisTarget TF list	hg38	NA	allTFs_hg38.txt	https://resources.aertslab.org/cistarget/tf_lists/allTFs_hg38.txt
+human	cisTarget ranking database	mc_v10_clust	hg38	refseq_r80	hg38_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather	https://resources.aertslab.org/cistarget/databases/homo_sapiens/hg38/refseq_r80/mc_v10_clust/gene_based/hg38_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather
+human	cisTarget ranking database	mc_v10_clust	hg38	refseq_r80	hg38_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather	https://resources.aertslab.org/cistarget/databases/homo_sapiens/hg38/refseq_r80/mc_v10_clust/gene_based/hg38_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather
+human	motif annotation	v10nr_clust	hg38	NA	motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl	https://resources.aertslab.org/cistarget/motif2tf/motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl

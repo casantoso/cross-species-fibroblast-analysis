@@ -1,0 +1,76 @@
+name: code-checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install lightweight test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy networkx pytest
+
+      - name: Compile Python source
+        run: |
+          python -m compileall python/
+
+      - name: Run Python utility tests
+        run: |
+          pytest tests/test_samap_utils.py tests/test_pyscenic_utils.py tests/test_orthology_utils.py tests/test_orthofinder_mapping.py
+
+
+  r:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install R test dependencies
+        shell: Rscript {0}
+        run: |
+          install.packages(c(
+            "testthat",
+            "Seurat",
+            "dplyr",
+            "ggplot2",
+            "stringr",
+            "enrichR",
+            "tidyr",
+            "purrr",
+            "patchwork"
+          ))
+
+      - name: Parse public R source files
+        shell: Rscript {0}
+        run: |
+          files <- list.files(
+            "R",
+            pattern = "\\.R$",
+            recursive = TRUE,
+            full.names = TRUE
+          )
+
+          for (file in files) {
+            message("Parsing: ", file)
+            parse(file = file)
+          }
+
+      - name: Run R unit tests
+        shell: Rscript {0}
+        run: |
+          source("tests/run_r_tests.R")

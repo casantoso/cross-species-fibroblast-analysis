@@ -1,0 +1,31 @@
+{
+  "group_col": "fib_subtype",
+  "threads": 8,
+  "seed": 123,
+  "auc_threshold": 0.05,
+  "umap": {
+    "n_neighbors": 10,
+    "min_dist": 0.4,
+    "metric": "correlation"
+  },
+  "human": {
+    "species_name": "Human",
+    "input_h5ad": "outputs/pyscenic/inputs/human_fibroblasts.h5ad",
+    "results_dir": "outputs/pyscenic/human",
+    "resources_dir": "resources/pyscenic/human",
+    "tf_list": "allTFs_hg38.txt",
+    "db_10kb": "hg38_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather",
+    "db_500bp": "hg38_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather",
+    "motif_annotations": "motifs-v10nr_clust-nr.hgnc-m0.001-o0.0.tbl"
+  },
+  "mouse": {
+    "species_name": "Mouse",
+    "input_h5ad": "outputs/pyscenic/inputs/mouse_fibroblasts.h5ad",
+    "results_dir": "outputs/pyscenic/mouse",
+    "resources_dir": "resources/pyscenic/mouse",
+    "tf_list": "allTFs_mm.txt",
+    "db_10kb": "mm10_10kbp_up_10kbp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather",
+    "db_500bp": "mm10_500bp_up_100bp_down_full_tx_v10_clust.genes_vs_motifs.rankings.feather",
+    "motif_annotations": "motifs-v10nr_clust-nr.mgi-m0.001-o0.0.tbl"
+  }
+}

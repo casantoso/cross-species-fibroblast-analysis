@@ -1,0 +1,7 @@
+species	scientific_name	source	release	assembly	fasta_type	filename	source_directory
+human	Homo sapiens	Ensembl	116	GRCh38	pep.all	Homo_sapiens.GRCh38.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/homo_sapiens/pep/
+mouse	Mus musculus	Ensembl	116	GRCm39	pep.all	Mus_musculus.GRCm39.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/mus_musculus/pep/
+pig	Sus scrofa	Ensembl	116	Sscrofa11.1	pep.all	Sus_scrofa.Sscrofa11.1.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/sus_scrofa/pep/
+chicken	Gallus gallus	Ensembl	116	bGalGal1.mat.broiler.GRCg7b	pep.all	Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/gallus_gallus/pep/
+zebrafish	Danio rerio	Ensembl	116	GRCz11	pep.all	Danio_rerio.GRCz11.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/danio_rerio/pep/
+tilapia	Oreochromis niloticus	Ensembl	116	O_niloticus_UMD_NMBU	pep.all	Oreochromis_niloticus.O_niloticus_UMD_NMBU.pep.all.fa.gz	https://ftp.ensembl.org/pub/release-116/fasta/oreochromis_niloticus/pep/
