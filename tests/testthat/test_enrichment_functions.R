@@ -1,4 +1,4 @@
-source("R/functions/enrichment_functions.R")
+source(testthat::test_path("..", "..", "R", "functions", "enrichment_functions.R"))
 
 test_that("GO identifiers are removed from enrichment labels", {
   observed <- clean_enrichment_term(

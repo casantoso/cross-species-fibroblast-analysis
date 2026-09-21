@@ -1,5 +1,5 @@
-source("R/functions/preprocessing_functions.R")
-source("R/functions/fibroblast_functions.R")
+source(testthat::test_path("..", "..", "R", "functions", "preprocessing_functions.R"))
+source(testthat::test_path("..", "..", "R", "functions", "fibroblast_functions.R"))
 
 
 make_test_seurat <- function() {

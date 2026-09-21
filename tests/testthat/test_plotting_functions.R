@@ -1,4 +1,4 @@
-source("R/functions/plotting_functions.R")
+source(testthat::test_path("..", "..", "R", "functions", "plotting_functions.R"))
 
 test_that("gene_has_assay_signal returns FALSE for a missing assay", {
   skip_if_not_installed("Seurat")

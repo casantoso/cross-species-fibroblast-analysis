@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Python utility tests
         run: |
-          pytest tests/test_samap_utils.py tests/test_pyscenic_utils.py tests/test_orthology_utils.py tests/test_orthofinder_mapping.py
+          PYTHONPATH=. pytest tests/test_samap_utils.py tests/test_pyscenic_utils.py tests/test_orthology_utils.py tests/test_orthofinder_mapping.py
 
 
   r:

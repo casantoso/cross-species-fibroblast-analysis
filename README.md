@@ -5,6 +5,8 @@ single-cell/single-nucleus RNA-seq preprocessing and fibroblast-focused
 analysis. Unpublished biological findings, internal mouse data, processed
 objects, figures, and cluster-to-subtype mappings are intentionally excluded.
 
+> **Project status:** Ongoing research project. This repository contains cleaned, reusable analysis code and workflow documentation. Unpublished biological results, private data, and evolving analyses are intentionally not included.
+
 ## Workflow
 
 ```text
@@ -353,3 +355,10 @@ pushes and pull requests.
 
 External software, third-party resource files, public datasets, and
 project-authored wrappers are distinguished in `docs/PROVENANCE.md`.
+
+
+### Continuous integration
+
+GitHub Actions runs lightweight Python and R checks on each push. Python tests
+run with the repository root on `PYTHONPATH`, and R tests resolve source files
+from the repository root through `testthat::test_path()`.
