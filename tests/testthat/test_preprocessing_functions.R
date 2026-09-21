@@ -60,7 +60,7 @@ test_that("apply_cluster_annotations assigns labels by cluster", {
   )
 
   expect_equal(
-    annotated$cell_type,
+    unname(annotated$cell_type),
     c("Fibroblasts", "Fibroblasts", "Epithelial", "Epithelial")
   )
 })
