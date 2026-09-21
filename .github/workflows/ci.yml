@@ -40,6 +40,11 @@ jobs:
           r-version: "release"
           use-public-rspm: true
 
+      - name: Install R system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglpk-dev
+
       - name: Install R test dependencies
         shell: Rscript {0}
         run: |
