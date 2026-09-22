@@ -1,0 +1,7 @@
+name: of3_env
+channels:
+  - defaults
+
+dependencies:
+  - python=3.12
+  - orthofinder=3.1.5

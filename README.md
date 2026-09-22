@@ -362,3 +362,14 @@ project-authored wrappers are distinguished in `docs/PROVENANCE.md`.
 GitHub Actions runs lightweight Python and R checks on each push. Python tests
 run with the repository root on `PYTHONPATH`, and R tests resolve source files
 from the repository root through `testthat::test_path()`.
+
+## Software environments
+
+Verified software environments used for the main workflows are provided in `environments/`:
+
+- `r_package_versions.tsv` — R/Seurat package versions
+- `samap_environment.yml` and `samap_requirements.txt` — SAMap (`sc-samap==3.0.1`, Python 3.12)
+- `pyscenic_environment.yml` and `pyscenic_requirements.txt` — pySCENIC (`pyscenic==0.12.1`, Python 3.10)
+- `orthofinder_environment.yml` — OrthoFinder 3.1.5 (Python 3.12)
+
+The Python environment files contain curated, workstation-verified versions and exclude machine-specific build paths and unrelated notebook-only dependencies.
