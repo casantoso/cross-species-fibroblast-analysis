@@ -40,7 +40,3 @@ File:
 - `orthofinder_environment.yml`
 
 The OrthoFinder environment is based on the verified conda history from the workstation.
-
-## Reproducibility note
-
-The YAML and requirements files are intentionally curated rather than full package dumps. Jupyter-only packages, transient dependencies, and machine-specific `file:///...` build paths are excluded.
